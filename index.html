@@ -3,60 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahdi Resume</title>
+  <title>Mahdi</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="header-inner">
-      <div class="header-text">
-        <h1 id="name">Mashiyat Mahdi</h1>
-        <div class= "subtitle">
-          <p> Aspiring Software Engineer  | Bachelor of Arts in Computer Science </p>
-        </div>
-        
+  <!-- FLEXBOX -->
+  <nav class="top-nav" >
+    <div class="logo"></div>
 
-        <p class="highlight">
-          Senior in Computer Science focused on building clean, user-friendly web applications. Strong in React/Next.js, REST APIs,
-          and databases, with hands-on experience in Big Data + ML projects using Spark.
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HEADER / HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 id="name">Mashiyat Mahdi</h1>
+        <p class="subtitle">Aspiring Software Engineer | B.A. Computer Science</p>
+        <p>
+          Senior in Computer Science focused on building clean, user-friendly web applications. Strong in React/Next.js,
+          REST APIs, and databases, with hands-on experience in Big Data + ML projects using Spark.
         </p>
 
-        <div class="quick-links" aria-label="Quick contact links">
-          <a class="chip" href="mailto:almahdi395@gmail.com">Gmail</a>
+        <div class="quick-links" >
+          <a class="chip" href="mailto:almahdi395@gmail.com">Email</a>
           <a class="chip" href="https://github.com/mahdi3022" target="_blank" rel="noreferrer">GitHub</a>
           <a class="chip" href="https://www.linkedin.com/in/mashiyat-mahdi-bbb49024a" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
 
-      <figure class="header-photo">
-        <img src="assets/pic.png" alt=" profile photo of Mashiyat Mahdi" />
+      <figure class="hero-photo">
+        <img src="assets/pic.png" alt="Profile photo of Mashiyat Mahdi" />
       </figure>
     </div>
   </header>
 
-  <!-- NAV -->
-  <nav aria-label="Primary">
-    <a href="#highlights">About</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-  </nav>
-<hr>
-
   <main>
     <!-- ABOUT -->
-    <section id="highlights" >
-      
-      <h3 id="highlights-title">Highlights</h3>
+    <section id="about" >
+      <h2 id="about-title">About</h2>
+      <p>
+        I build responsive web apps and APIs with a focus on clean UI, accessibility, and solid data modeling.
+        I enjoy shipping practical projects end-to-end—from frontend components to backend endpoints and database design.
+      </p>
+
+      <h3>Highlights</h3>
       <ul>
         <li>Frontend: React, Next.js, HTML, CSS (responsive layout, accessibility)</li>
         <li>Backend: Node.js/Express, REST API design, authentication-ready apps</li>
         <li>Data: PostgreSQL/MongoDB/Neo4j + Spark/PySpark for large-scale analysis</li>
-        <li>Strong Git/GitHub workflow (branches, PRs, code review habits)</li>
+        <li>Strong Git/GitHub workflow (branches, PRs, code review)</li>
       </ul>
     </section>
 
@@ -67,40 +70,34 @@
 
       <h3>Relevant Coursework</h3>
       <table>
+        <thead>
           <tr>
             <th scope="col">Course</th>
             <th scope="col">Focus</th>
           </tr>
-
+        </thead>
+        <tbody>
           <tr>
             <td>Software Analysis and Design</td>
-            <td> Agile methodology, Data Structures and Algorithms,
- system architecture, object-oriented design principles</td>
+            <td>Agile methodology, DSA, system architecture, object-oriented design principles</td>
           </tr>
-
           <tr>
             <td>Web Development</td>
-            <td>Semantic HTML, CSS specificity/layout, JavaScript, deployment, Git/GitHub</td>
+            <td>Semantic HTML, CSS layout, JavaScript, deployment, Git/GitHub</td>
           </tr>
-          
-
           <tr>
-            <td>Database Management </td>
+            <td>Database Management</td>
             <td>ER modeling, relational schemas, SQL queries, constraints, normalization</td>
           </tr>
-
           <tr>
-            <td>Big Data Technology </td>
+            <td>Big Data Technology</td>
             <td>Spark/PySpark, MapReduce, large-scale processing + evaluation</td>
           </tr>
           <tr>
-            <td>Operating Systems </td>
-            <td>Process scheduling, memory management (paging, allocation strategies),
-concurrency & synchronization (deadlocks, race conditions),
-file systems, system calls</td>
+            <td>Operating Systems</td>
+            <td>Scheduling, memory, concurrency, file systems, system calls</td>
           </tr>
-
-        
+        </tbody>
       </table>
     </section>
 
@@ -108,133 +105,72 @@ file systems, system calls</td>
     <section id="skills" >
       <h2 id="skills-title">Skills</h2>
 
-      <div class="grid">
+      <div class="skills-grid">
         <div class="card">
           <h3>Programming</h3>
-          <ul>
-            <li>Python, JavaScript , C++</li>
-            <li>SQL, HTML5, CSS</li>
-          </ul>
+          <p>Python, JavaScript, C++</p>
+          <p>SQL, HTML5, CSS3</p>
         </div>
 
         <div class="card">
           <h3>Frontend</h3>
-          <ul>
-            <li>React, Next.js</li>
-            <li>Responsive UI</li>
-            <li>Tailwind CSS </li>
-          </ul>
+          <p>React, Next.js</p>
+          <p>Responsive UI, accessibility</p>
         </div>
 
         <div class="card">
-          <h3>Backend & APIs</h3>
-          <ul>
-            <li>Node.js, Express</li>
-            <li>REST APIs, CRUD endpoints</li>
-            <li>Authentication & Authorization:
-                Session-based auth, JWT authentication, protected routes
-            </li>
-          </ul>
+          <h3>Backend &amp; APIs</h3>
+          <p>Node.js, Express</p>
+          <p>REST APIs, CRUD endpoints</p>
         </div>
 
         <div class="card">
           <h3>Databases</h3>
-          <ul>
-            <li>PostgreSQL, MySQL</li>
-            <li>MongoDB</li>
-            <li>Neo4j </li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Big Data & ML</h3>
-          <ul>
-            <li>Apache Spark / PySpark</li>
-            <li>MapReduce</li>
-            <li>Random Forest, Logistic Regression</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Tools</h3>
-          <ul>
-            <li>Git, GitHub (branches/PRs)</li>
-            <li>Postman, VS Code, Chrome DevTools</li>
-            <li>Command line (Windows Git Bash / Linux basics)</li>
-          </ul>
+          <p>PostgreSQL, MySQL</p>
+          <p>MongoDB, Neo4j</p>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-<section id="projects">
-  <h2 id="projects-title">Projects</h2>
+   
+    <section id="projects" >
+      <h2 id="projects-title">Projects</h2>
 
-  <div class="project">
-    <h3>Lost &amp; Found Web App</h3>
-    <p>
-      A full-stack web application that allows students to post lost items,
-      browse listings, and contact owners in a simple and organized way.
-    </p>
-    <ul>
-      <li>Created features to add and view lost items</li>
-      <li>Stored item information in a structured database</li>
-      <li>Built using Node.js, Express, PostgreSQL, and HTML/CSS/JavaScript</li>
-    </ul>
-  </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="assets/lf.avif" alt="Lost & Found Web App screenshot" />
+          <h3>Lost &amp; Found Web App</h3>
+          <p>A full-stack app for posting and browsing lost items with clean workflows.</p>
+        </article>
 
-  
+        <article class="project-card">
+          <img src="assets/bd.avif" alt="Big Data & ML project screenshot" />
+          <h3>Big Data &amp; ML Projects</h3>
+          <p>Processed large datasets with PySpark and evaluated ML models.</p>
+        </article>
 
-  <div class="project">
-    <h3>Big Data &amp; Machine Learning Projects</h3>
-    <p>
-      Academic projects focused on analyzing large datasets and building simple
-      predictive models.
-    </p>
-    <ul>
-      <li>Processed large datasets using PySpark</li>
-      <li>Built and tested machine learning models</li>
-      <li>Worked with graph-style data structures</li>
-    </ul>
-  </div>
-
-  
-</section>
-
-
-
-    <!-- EXPERIENCE -->
-    <section id="experience">
-  <h2>Experience</h2>
-
-  <div class="job">
-    <h3>Computer Science UTA at Hunter College </h3>
-    
-    <ul>
-      <li>Helped students debug code and understand programming fundamentals</li>
-      <li>Led code review sessions and provided clear feedback on assignments</li>
-      <li>Supported lab operations and assisted with course organization</li>
-    </ul>
-  </div>
-
-  
-</section>
+        <article class="project-card">
+          <img src="assets/ui.avif" alt="Portfolio website screenshot" />
+          <h3>Responsive Portfolio</h3>
+          <p>A responsive site using Flexbox navigation, CSS Grid, and media queries.</p>
+        </article>
+      </div>
+    </section>
 
     <!-- CONTACT -->
-    <section id="contact" aria-labelledby="contact-title">
+    <section id="contact" >
       <h2 id="contact-title">Contact</h2>
-      <p>
-        Email: <a href="mailto:almahdi395@gmail.com">almahdi395@gmail.com</a><br />
-        GitHub: <a href="https://github.com/mahdi3022" target="_blank" rel="noreferrer">https://github.com/mahdi3022</a><br />
-        LinkedIn: <a href="https://www.linkedin.com/in/mashiyat-mahdi-bbb49024a" target="_blank" rel="noreferrer">linkedin.com/in/mashiyat-mahdi-bbb49024a</a>
-      </p>
+      <p>Email: <a href="mailto:almahdi395@gmail.com">almahdi395@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/mahdi3022" target="_blank" rel="noreferrer">github.com/mahdi3022</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mashiyat-mahdi-bbb49024a" target="_blank" rel="noreferrer">
+        linkedin.com/in/mashiyat-mahdi-bbb49024a
+      </a>
+    </p>
     </section>
   </main>
-<hr>
-  <footer>
-    <p>© <span id="year">2026</span> Mahdi </p>
-  </footer>
 
-  
+  <footer>
+    <p>© 2026 Mashiyat Mahdi</p>
+  </footer>
 </body>
 </html>
